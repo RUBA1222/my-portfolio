@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية الرقمية | ربا باهمام</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1e1b4b; /* كحلي داكن يرمز للأمن السيبراني */
+            --accent-color: #a88d7f; /* اللون الترابي الأنيق لاهتمامات التصميم */
+            --bg-light: #f8fafc;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --white: #ffffff;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-light); color: var(--text-dark); font-family: 'Cairo', sans-serif; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: var(--white); border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; }
+        
+        /* الهيدر العلوي */
+        header { background: linear-gradient(135deg, var(--primary-dark), #312e81); color: var(--white); padding: 50px 40px; position: relative; }
+        .header-grid { display: flex; align-items: center; gap: 30px; }
+        .profile-icon { font-size: 4.5rem; background: rgba(255,255,255,0.1); width: 110px; height: 110px; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--accent-color); }
+        .header-text h1 { font-size: 2.2rem; font-weight: 900; margin-bottom: 5px; }
+        .header-text p { color: #c7d2fe; font-size: 1.1rem; font-weight: 600; }
+
+        /* المحتوى الرئيسي */
+        .content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 40px; }
+        .main-section { margin-bottom: 35px; }
+        .section-title { font-size: 1.3rem; font-weight: 900; color: var(--primary-dark); margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+        .text-block { text-align: justify; color: var(--text-muted); font-size: 1rem; }
+        
+        .list-items { list-style: none; }
+        .list-items li { position: relative; padding-right: 20px; margin-bottom: 12px; color: var(--text-muted); }
+        .list-items li::before { content: "•"; color: var(--accent-color); font-weight: bold; font-size: 1.3rem; position: absolute; right: 0; top: -2px; }
+
+        /* العمود الجانبي */
+        .sidebar-section { margin-bottom: 30px; background: #f8fafc; padding: 20px; border-radius: 16px; border: 1px solid #edf2f7; }
+        .sidebar-title { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+        .contact-link { display: block; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 8px; text-decoration: none; }
+        
+        .tag-container { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; }
+        .tag.creative { background: #fef3c7; color: #b45309; }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .header-grid { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- الهيدر العلوي الحديث -->
+        <header>
+            <div class="header-grid">
+                <div class="profile-icon">👩‍💻</div>
+                <div class="header-text">
+                    <h1>ربا عبدالله باهمام</h1>
+                    <p>متخصصة في الأمن السيبراني وصناعة المحتوى الرقمي</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- المحتوى الداخلي -->
+        <div class="content-grid">
+            
+            <!-- الجزء الأيمن: العريض -->
+            <main>
+                <section class="main-section">
+                    <h2 class="section-title">الملخص المهني</h2>
+                    <p class="text-block">
+                        أنا طالبة أمن سيبراني، وشغوفة بالتقنية والإبداع الرقمي، أمتلك مهارات وخبرات في التصوير الفوتوغرافي وصناعة المحتوى والتسويق الرقمي والتصميم الجرافيكي. أسعى إلى تطوير قدراتي باستمرار، والجمع بين المعرفة التقنية والحس الإبداعي لتقديم أعمال احترافية ومبتكرة. أهتم بالتفاصيل، وأمتلك روح المبادرة والتعلم المستمر، وأسعى إلى توظيف مهاراتي في تنفيذ المشاريع الرقمية، وبناء الأفكار الإبداعية، وتقديم حلول تجمع بين التقنية والتصميم والتسويق.
+                    </p>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="section-title">الخبرات والمشاريع</h2>
+                    <ul class="list-items">
+                        <li><strong>العمل الحر الرقمي:</strong> إنتاج وتطوير المحتوى البصري الاحترافي وإعداد التقارير الفنية المصورة.</li>
+                        <li><strong>التصميم الإعلاني والدعائي:</strong> بناء الهويات البصرية الرقمية وتصميم الحملات الإعلانية المبتكرة للمنشآت.</li>
+                        <li><strong>تطبيقات الحاسب الإبداعية:</strong> نيل شهادة شكر وتقدير في توظيف تقنيات الحاسوب المتقدمة في معالجة الصور الرقمية.</li>
+                        <li><strong>التنمية والتطوير الاجتماعي:</strong> المشاركة الفعالة في تصميم مبادرات مجتمعية نوعية متخصصة في التنمية البشرية والتسويق الإلكتروني.</li>
+                    </ul>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="section-title">التأهيل والدورات التخصصية</h2>
+                    <ul class="list-items">
+                        <li>حاصلة على شهادة معتمدة في "مقدمة في الأمن السيبراني وحماية البيانات الرقمية".</li>
+                        <li>دورة متقدمة في "إستراتيجيات التسويق الرقمي الحديثة وصناعة المحتوى الإبداعي".</li>
+                        <li>دورة "مهارات الحاسب الآلي المتقدمة" وتطبيقات تكنولوجيا المعلومات في العمل الحُر.</li>
+                        <li>ورشة عمل في "إدارة الوقت بفعالية والإنتاجية الرقمية".</li>
+                        <li>تطوير متواصل لمهارات اللغة الإنجليزية التقنية والتخصصية.</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- الجزء الأيسر: الجانبي -->
+            <aside>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">قنوات التواصل</h3>
+                    <span class="contact-link">📞 +966 59 916 1099</span>
+                    <span class="contact-link">✉️ rby0922@gmail.com</span>
+                    <span class="contact-link">🌐 www.rby.com</span>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">المهارات والقدرات</h3>
+                    <div class="tag-container">
+                        <span class="tag">الأمن السيبراني</span>
+                        <span class="tag">حماية البيانات</span>
+                        <span class="tag">مهارات الحاسب</span>
+                        <span class="tag creative">التصوير الفوتوغرافي</span>
+                        <span class="tag creative">التصميم الجرافيكي</span>
+                        <span class="tag creative">التسويق الرقمي</span>
+                        <span class="tag">إدارة الوقت</span>
+                        <span class="tag creative">الابتكار والمبادرة</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
